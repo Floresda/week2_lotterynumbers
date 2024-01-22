@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoosier Lottery Numbers</title>
+</head>
+<body>
+
+    <h2>For Loop Numbers:</h2>
+    <script>
+       let forLoopNumbers = ""; 
+
+    for (let randomNumber; forLoopNumbers.split(" ").length < 6; forLoopNumbers += randomNumber + " ") {
+    randomNumber = Math.floor(Math.random() * 49) + 1;
+    }
+
+    document.write("<h3>" + forLoopNumbers + "</h3>")
+    </script>
+
+    <h2>While Loop Numbers:</h2>
+    <script>
+        let whileLoopNumbers = "";
+        let whileLoopCounter = 0;
+
+        while (whileLoopCounter < 5) {
+            let randomNumber = Math.floor(Math.random() * 49) + 1;
+            whileLoopNumbers += randomNumber + " ";
+            whileLoopCounter++;
+        }
+
+        document.write("<h3>" + whileLoopNumbers + "</h3>");
+            </script>
+</body>
+</html>
